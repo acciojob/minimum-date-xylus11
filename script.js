@@ -1,5 +1,16 @@
 function minDate(dates) {
   //write you code here
+	const min =0;
+	const newArr = dates.map((date) => new Date(date));
+
+	for(const ele in newArr){
+		if(newArr[min] > newArr[ele]){
+			min== ele
+		}
+	}
+	return dates[min];
+
+	
 }
 
 // Do not change the code
@@ -37,4 +48,4 @@ var dates = [
   "2023/03/30",
 ];
 
-alert(minDate(dates));
+// alert(minDate(dates));
